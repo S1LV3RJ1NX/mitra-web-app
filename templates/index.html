@@ -17,6 +17,19 @@
   </head>
   
   <body class="size-1140">
+    <header role="banner" class="position-absolute">    
+      <!-- Top Navigation -->
+      <nav class="background-transparent background-transparent-hightlight full-width sticky">
+
+        <div class="top-nav s-12 l-12">
+          <p class="nav-text"></p>
+          <ul class="right chevron">
+            <li><a  href="https://facebook.com/MitraCrisisHelper" target="_blank"><i class="icon-sli-social-facebook icon2x"></a></i></li>
+            <!-- <li><a href="{{ url_for('index') }}">Home</a></li> -->
+          </ul>
+        </div>
+      </nav>
+    </header>
     <!-- Load Facebook SDK for JavaScript -->
       <div id="fb-root"></div>
       <script>
@@ -34,22 +47,13 @@
         js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
-
-      
-
-    <header role="banner" class="position-absolute">    
-      <!-- Top Navigation -->
-      <nav class="background-transparent background-transparent-hightlight full-width sticky">
-
-        <div class="top-nav s-12 l-12">
-          <p class="nav-text"></p>
-          <ul class="right chevron">
-            <li><a  href="https://facebook.com/MitraCrisisHelper" target="_blank"><i class="icon-sli-social-facebook icon2x"></a></i></li>
-            <!-- <li><a href="{{ url_for('index') }}">Home</a></li> -->
-          </ul>
-        </div>
-      </nav>
-    </header>
+        <!-- Your Chat Plugin code -->
+        <div class="fb-customerchat"
+          attribution=setup_tool
+          page_id="101799851586792"
+          logged_in_greeting="I am 'Mitra' your friend in crisis. How can I help you?"
+          logged_out_greeting="It was good helping you!!">
+        </div> 
     
     <!-- MAIN -->
     <main role="main">    
@@ -113,7 +117,10 @@
         </div>
       </section>
       <div class="text-center">
-        <p class="h1 margin-top margin-bottom-40"> Mitra can do more say "Hi" to find out!! </p>
+        <p class="h1"> Mitra can do more say "Hi" to find out!!</p>        
+      </div>
+      <div class="text-center margin-bottom-30">
+        <small>Site is deployed in Heroku, it might take some time to get initial replies. Your patience is expected :)</small>
       </div>
       
     </main>
@@ -122,14 +129,7 @@
     <footer>
       <!-- Contact Us -->
       <div class="background-primary padding text-center">
-        <p class="h1">Contact Us</p>
-        <!-- Your Chat Plugin code -->
-        <div class="fb-customerchat"
-          attribution=setup_tool
-          page_id="101799851586792"
-          logged_in_greeting="I am 'Mitra' your friend in crisis. How can I help you?"
-          logged_out_greeting="It was good helping you!!">
-        </div>                                                                        
+        <p class="h1">Contact Us</p>                                           
       </div>
       
       <!-- Main Footer -->
