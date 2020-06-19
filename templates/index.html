@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MITRA - Your Rescue Bot</title>
+   <!--  <link rel="stylesheet" href="css/components.css"> -->
+    <link rel="stylesheet" href="static/css/icons.css">
+    <link rel="stylesheet" href="static/css/responsee.css">
+    <link rel="stylesheet" href="static/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="static/owl-carousel/owl.theme.css">     
+    <link rel="stylesheet" href="static/css/template-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="static/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery-ui.min.js"></script>      
+  </head>
+  
+  <body class="size-1140">
+    <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v7.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="101799851586792"
+        logged_in_greeting="I am 'Mitra' your friend in crisis. How can I help you?"
+        logged_out_greeting="It was good helping you!!">
+      </div>
+
+    <header role="banner" class="position-absolute">    
+      <!-- Top Navigation -->
+      <nav class="background-transparent background-transparent-hightlight full-width sticky">
+
+        <div class="top-nav s-12 l-12">
+          <p class="nav-text"></p>
+          <ul class="right chevron">
+            <li><a  href="https://facebook.com/MitraCrisisHelper" target="_blank"><i class="icon-sli-social-facebook icon2x"></a></i></li>
+            <!-- <li><a href="{{ url_for('index') }}">Home</a></li> -->
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- MAIN -->
+    <main role="main">    
+      <!-- Main Header -->
+      <header>
+        <div class="carousel-default owl-carousel carousel-main carousel-nav-white background-dark text-center">
+          <div class="item">
+            <div class="s-12">
+              <img src="static/img/header.jpg" alt="">
+              <div class="carousel-content">
+                <div class="content-center-vertical line">
+                  <div class="margin-top-bottom-80">
+                    <!-- Title -->
+                    <h1 class="text-white margin-bottom-30 text-size-60 text-m-size-30 text-line-height-1"><br><br>MITRA <br>Your Friend in Crisis</h1>
+                    <div class="s-12 m-10 l-8 center"><p class="text-white text-size-20 margin-bottom-40">Created with love, a chatbot powered by Wit.ai to help our people in times of crisis.</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>              
+        </div>               
+      </header>
+      <div class="text-center">
+        <p class="h1 margin-top"> What can Mitra do? </p>
+      </div>
+      <!-- Section 1 -->
+      <section class="section-small-padding background-white text-center"> 
+        <div class="line">
+          <div class="margin">
+            <div class="s-12 m-12 l-3 margin-m-bottom">
+              <div class="padding-2x block-bordered">
+                <i class="icon-sli-phone icon3x text-dark center margin-bottom-30"></i>
+                <h2 class="text-thin">Emergency Helplines</h2>
+                <p class="margin-bottom-30">Get all the helpline numbers including the COVID-19 Helplines for India and Maharashtra, and the Depression and Suicidal Helplines at your fingertips. Just text Mitra to find help before you take a wrong step 🙂</p>
+                <!-- <a class="button button-dark-stroke text-size-12" href="/">GET MORE INFO</a> -->
+              </div>
+            </div>
+            <div class="s-12 m-12 l-3 margin-m-bottom">
+              <div class="padding-2x block-bordered">
+                <i class="icon-sli-location-pin icon3x text-dark center margin-bottom-30"></i>
+                <h2 class="text-thin">COVID Statistics</h2>
+                <p class="margin-bottom-30">Get India’s COVID-19 Numbers. Just text: “Maharashtra COVID stats” and you’ll get the numbers! Currently supported for all Maharashtra Cities and every state in India!</p>
+              </div>
+            </div>
+            <div class="s-12 m-12 l-3 margin-m-bottom">
+              <div class="padding-2x block-bordered">
+                <i class="icon-sli-home icon3x text-dark center margin-bottom-30"></i>
+                <h2 class="text-thin">Hospitals and Shelters</h2>
+                <p class="margin-bottom-30">Get access to the information about the NGO’s, Food Shelters and Hospitals in your city by just asking Mitra: <br>“Find me a NGO in Pune”.
+                  <br>"Find me a Hospital in Sangli" <br>Currently supported only for Sangli, Kolhapur, Solapur, Pune and Satara.</p>
+              </div>
+          </div>
+
+          <div class="s-12 m-12 l-3 margin-m-bottom">
+              <div class="padding-2x block-bordered">
+                <i class="icon-sli-earphones icon3x text-dark center margin-bottom-30"></i>
+                <h2 class="text-thin">Get Refreshed</h2>
+                <p class="margin-bottom-30">We’ve created a simple and peaceful and devotional Spotify playlists and few Youtube Yoga links just perfect for you! Just ask and you’ll delve into peace with our recommendation.</p>
+              </div>
+          </div>
+        </div>
+      </section>
+      <div class="text-center">
+        <p class="h1 margin-top margin-bottom-40"> Mitra can do more say "Hi" to find out!! </p>
+      </div>
+      
+    </main>
+    
+    <!-- FOOTER -->
+    <footer>
+      <!-- Contact Us -->
+      <div class="background-primary padding text-center">
+        <p class="h1">Contact Us</p>                                                                        
+      </div>
+      
+      <!-- Main Footer -->
+      <section class="background-dark full-width">
+        <!-- Collumn 2 -->
+        <div class="s-12 m-12 l-6 margin-m-bottom-2x">
+          <div class="padding-2x">
+            <div class="line">              
+              <div class="float-left">
+                  <i class="icon-sli-people text-primary icon3x"></i>
+                </div>
+                <div class="margin-left-70 margin-bottom-30">
+                  <h3 class="margin-bottom-0">Team Members</h3>
+                  <p>Prathamesh Saraf<br>
+                     Sujay Rittikar
+                  </p>               
+                </div>
+                <div class="float-left">
+                  <i class="icon-sli-envelope text-primary icon3x"></i>
+                </div>
+                <div class="margin-left-70 margin-bottom-30">
+                  <h3 class="margin-bottom-0">E-mail</h3>
+                  <p>pratamesh1867@gmail.com<br>
+                     28sujrit03@gmail.com
+                  </p>              
+                </div>
+            </div>
+          </div>
+        </div>  
+      </section>
+      <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
+    </footer>
+    <script type="text/javascript" src="static/js/responsee.js"></script>
+    <script type="text/javascript" src="static/owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="static/js/template-scripts.js"></script>
+  </body>
+</html>
