@@ -200,7 +200,6 @@
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
-  color:#e3e3e3;
   speak: none; 
   text-transform: none;
   /* Better Font Rendering =========== */
@@ -596,7 +595,7 @@
   font-style: normal;  
   font-variant: normal;
   font-weight: normal;
-  color:#e3e3e3;
+  /*color:#e3e3e3;*/
   speak: none;
   text-transform: none;
   /* Better Font Rendering =========== */
